@@ -6,13 +6,13 @@
 /*   By: jdupont <jdupont@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/03 14:18:57 by jdupont           #+#    #+#             */
-/*   Updated: 2025/10/03 15:48:53 by jdupont          ###   ########.fr       */
+/*   Updated: 2025/10/03 16:40:07 by jdupont          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef BUILTINS_H
 # define BUILTINS_H
 
-#include "../../minishell.h"
+# include "../../minishell.h"
 
 #endif

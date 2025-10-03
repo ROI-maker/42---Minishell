@@ -6,14 +6,14 @@
 /*   By: jdupont <jdupont@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/03 14:19:15 by jdupont           #+#    #+#             */
-/*   Updated: 2025/10/03 14:29:26 by jdupont          ###   ########.fr       */
+/*   Updated: 2025/10/03 16:39:51 by jdupont          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef UTILS_H
 # define UTILS_H
 
-#include "../../minishell.h"
+# include "../../minishell.h"
 
 
 #endif

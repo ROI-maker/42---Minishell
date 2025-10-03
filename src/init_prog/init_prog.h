@@ -6,14 +6,14 @@
 /*   By: jdupont <jdupont@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/03 14:19:05 by jdupont           #+#    #+#             */
-/*   Updated: 2025/10/03 14:29:04 by jdupont          ###   ########.fr       */
+/*   Updated: 2025/10/03 16:40:02 by jdupont          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef INIT_PROG_H
 # define INIT_PROG_H
 
-#include "../../minishell.h"
+# include "../../minishell.h"
 
 
 #endif

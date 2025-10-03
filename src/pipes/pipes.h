@@ -6,14 +6,14 @@
 /*   By: jdupont <jdupont@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/03 14:19:10 by jdupont           #+#    #+#             */
-/*   Updated: 2025/10/03 14:29:09 by jdupont          ###   ########.fr       */
+/*   Updated: 2025/10/03 16:39:56 by jdupont          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PIPES_H
 # define PIPES_H
 
-#include "../../minishell.h"
+# include "../../minishell.h"
 
 
 #endif
