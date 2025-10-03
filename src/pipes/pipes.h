@@ -1,20 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   pipes.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jdupont <jdupont@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/03 13:40:50 by jdupont           #+#    #+#             */
-/*   Updated: 2025/10/03 14:51:22 by jdupont          ###   ########.fr       */
+/*   Created: 2025/10/03 14:19:10 by jdupont           #+#    #+#             */
+/*   Updated: 2025/10/03 14:29:09 by jdupont          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../minishell.h"
+#ifndef PIPES_H
+# define PIPES_H
 
-int	main(void)
-{
-	ft_printf("Bonjour ceci est un test de makefile\n");
-	test_makefile();
-	return (0);
-}
+#include "../../minishell.h"
+
+
+#endif

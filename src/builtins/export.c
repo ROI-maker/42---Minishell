@@ -1,20 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   export.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jdupont <jdupont@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/03 13:40:50 by jdupont           #+#    #+#             */
-/*   Updated: 2025/10/03 14:51:22 by jdupont          ###   ########.fr       */
+/*   Created: 2025/10/03 13:55:27 by jdupont           #+#    #+#             */
+/*   Updated: 2025/10/03 14:42:56 by jdupont          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../minishell.h"
+//Rôle principal : Implémente export (ajoute/modifie var dans env).
+// Gère format VAR=value, tri alphabétique pour display.
 
-int	main(void)
-{
-	ft_printf("Bonjour ceci est un test de makefile\n");
-	test_makefile();
-	return (0);
-}
+//Fonctions attendues : int builtin_export(char **args, t_env **env);
+// t_env *sort_env(t_env *env);
+
+//Conseils : Si no arg, print sorted env comme declare -x. Vérifie valid key.
+
+#include "builtins.h"

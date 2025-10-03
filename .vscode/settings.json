@@ -1,0 +1,7 @@
+{
+	"files.associations": {
+		"utils.h": "c",
+		"pipes.h": "c",
+		"builtins.h": "c"
+	}
+}

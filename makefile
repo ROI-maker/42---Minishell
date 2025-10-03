@@ -2,22 +2,45 @@ NAME = minishell
 
 # Directories
 SRC_DIR = src
-INC_DIR = ../includes/minilib
-LIBFT_DIR = ../includes/minilib
+SRC_DIR_BUILTINS = src/builtins
+SRC_DIR_PIPES = src/pipes
+SRC_DIR_INIT = src/init_prog
+SRC_DIR_UTILS = src/utils
+LIBFT_DIR = includes/minilib
 
 # Source files (empty for now, add as you go)
-SRC = $(SRC_DIR)/pipex.c $(SRC_DIR)/utils.c
+SRC =	$(SRC_DIR)/main.c \
+		$(SRC_DIR_BUILTINS)/cd.c \
+		$(SRC_DIR_BUILTINS)/echo.c \
+		$(SRC_DIR_BUILTINS)/env.c \
+		$(SRC_DIR_BUILTINS)/exit.c \
+		$(SRC_DIR_BUILTINS)/export.c \
+		$(SRC_DIR_BUILTINS)/pwd.c \
+		$(SRC_DIR_BUILTINS)/unset.c \
+		$(SRC_DIR_INIT)/init_env.c \
+		$(SRC_DIR_INIT)/parsing.c \
+		$(SRC_DIR_PIPES)/executions.c \
+		$(SRC_DIR_PIPES)/expansions.c \
+		$(SRC_DIR_PIPES)/pipes.c \
+		$(SRC_DIR_PIPES)/redirections.c \
+		$(SRC_DIR_UTILS)/utils.c \
+		$(SRC_DIR_UTILS)/signals.c \
+		$(SRC_DIR_UTILS)/history.c \
+		$(SRC_DIR_UTILS)/free.c \
+		$(SRC_DIR_UTILS)/exit_prog.c \
+		$(SRC_DIR_UTILS)/errors.c \
+		$(SRC_DIR_UTILS)/env_utils.c \
 
 # Objects
 OBJ = $(SRC:.c=.o)
 
 # Compiler and flags
 CC = gcc
-CFLAGS = -Wall -Wextra -Werror -I$(INC_DIR) -I$(INC_DIR)/ft_printf
+CFLAGS = -Wall -Wextra -Werror -I$(LIBFT_DIR) -I$(LIBFT_DIR)/ft_printf
 LDFLAGS = -L$(LIBFT_DIR) -lft -lm
 
 # Colors
-GREEN = \033[0;32m
+GREEN = \033[0;32ms
 YELLOW = \033[1;33m
 BLUE = \033[1;34m
 RED = \033[1;31m

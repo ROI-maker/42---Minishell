@@ -1,20 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   env.c                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jdupont <jdupont@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/03 13:40:50 by jdupont           #+#    #+#             */
-/*   Updated: 2025/10/03 14:51:22 by jdupont          ###   ########.fr       */
+/*   Created: 2025/10/03 13:56:32 by jdupont           #+#    #+#             */
+/*   Updated: 2025/10/03 14:42:46 by jdupont          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../minishell.h"
+//Rôle principal : Implémente env (affiche toutes vars).
 
-int	main(void)
-{
-	ft_printf("Bonjour ceci est un test de makefile\n");
-	test_makefile();
-	return (0);
-}
+//Fonctions attendues : int builtin_env(t_env *env);
+
+//Conseils : Boucle sur t_env, print "key=value\n".
+
+#include "builtins.h"

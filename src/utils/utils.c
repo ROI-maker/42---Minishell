@@ -1,20 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   utils.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jdupont <jdupont@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/03 13:40:50 by jdupont           #+#    #+#             */
-/*   Updated: 2025/10/03 14:51:22 by jdupont          ###   ########.fr       */
+/*   Created: 2025/10/03 14:00:33 by jdupont           #+#    #+#             */
+/*   Updated: 2025/10/03 14:41:11 by jdupont          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../minishell.h"
+//Rôle principal : Fonctions utilitaires générales
 
-int	main(void)
-{
-	ft_printf("Bonjour ceci est un test de makefile\n");
-	test_makefile();
-	return (0);
-}
+//Conseils : Évite de dupliquer libft. Utile pour checks comme valid path.
+
+#include "utils.h"

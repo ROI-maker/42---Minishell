@@ -1,20 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   pipes.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jdupont <jdupont@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/03 13:40:50 by jdupont           #+#    #+#             */
-/*   Updated: 2025/10/03 14:51:22 by jdupont          ###   ########.fr       */
+/*   Created: 2025/10/03 13:52:00 by jdupont           #+#    #+#             */
+/*   Updated: 2025/10/03 14:41:48 by jdupont          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../minishell.h"
+//Rôle principal : Gère les pipelines (|).
+// Crée pipes, fork pour chaque cmd, connecte fds.
 
-int	main(void)
-{
-	ft_printf("Bonjour ceci est un test de makefile\n");
-	test_makefile();
-	return (0);
-}
+//Fonctions attendues : void execute_pipeline(t_cmd *cmds, t_env *env);
+// int create_pipes(int pipe_fds[2]);
+
+//Conseils : Boucle sur cmds, fork, dup2 pipe[0]/pipe[1],
+// close inutiles. Attends avec waitpid dans parent.
+
+#include "pipes.h"
