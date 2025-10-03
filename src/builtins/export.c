@@ -6,16 +6,24 @@
 /*   By: jdupont <jdupont@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/03 13:55:27 by jdupont           #+#    #+#             */
-/*   Updated: 2025/10/03 14:42:56 by jdupont          ###   ########.fr       */
+/*   Updated: 2025/10/03 20:50:58 by jdupont          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//Rôle principal : Implémente export (ajoute/modifie var dans env).
-// Gère format VAR=value, tri alphabétique pour display.
+#include "minishell.h"
 
-//Fonctions attendues : int builtin_export(char **args, t_env **env);
-// t_env *sort_env(t_env *env);
-
-//Conseils : Si no arg, print sorted env comme declare -x. Vérifie valid key.
-
-#include "builtins.h"
+/*
+ * Fichier : export.c (export with no options)
+ *
+ * Description vulgarisée : Ajoute ou modifie des variables d'environnement, 
+ * comme ajouter une note dans ton inventaire pour que d'autres commandes l'utilisent.
+ * 
+ * Description technique : Parse "KEY=value", ajoute ou update dans la liste env (triée alphabétiquement). 
+ * Si sans "=", affiche la liste exportée (comme env mais triée avec declare -x).
+ * 
+ * Fonctions potentielles :
+ *   - builtin_export() : Pour chaque arg, split KEY=value, insert dans env list.
+ *   - export_print() : Si no args, print sorted env avec "declare -x ".
+ * 
+ * Interactions : Utilise env_utils.c pour manipuler la liste env, errors.c pour invalid identifiers.
+ */

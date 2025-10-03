@@ -3,33 +3,13 @@ NAME = minishell
 # Directories
 SRC_DIR = src
 SRC_DIR_BUILTINS = src/builtins
-SRC_DIR_PIPES = src/pipes
-SRC_DIR_INIT = src/init_prog
+SRC_DIR_PIPES = src/execution
+SRC_DIR_INIT = src/parsing
 SRC_DIR_UTILS = src/utils
 LIBFT_DIR = includes/minilib
 
 # Source files (empty for now, add as you go)
 SRC =	$(SRC_DIR)/main.c \
-		$(SRC_DIR_BUILTINS)/cd.c \
-		$(SRC_DIR_BUILTINS)/echo.c \
-		$(SRC_DIR_BUILTINS)/env.c \
-		$(SRC_DIR_BUILTINS)/exit.c \
-		$(SRC_DIR_BUILTINS)/export.c \
-		$(SRC_DIR_BUILTINS)/pwd.c \
-		$(SRC_DIR_BUILTINS)/unset.c \
-		$(SRC_DIR_INIT)/init_env.c \
-		$(SRC_DIR_INIT)/parsing.c \
-		$(SRC_DIR_PIPES)/executions.c \
-		$(SRC_DIR_PIPES)/expansions.c \
-		$(SRC_DIR_PIPES)/pipes.c \
-		$(SRC_DIR_PIPES)/redirections.c \
-		$(SRC_DIR_UTILS)/utils.c \
-		$(SRC_DIR_UTILS)/signals.c \
-		$(SRC_DIR_UTILS)/history.c \
-		$(SRC_DIR_UTILS)/free.c \
-		$(SRC_DIR_UTILS)/exit_prog.c \
-		$(SRC_DIR_UTILS)/errors.c \
-		$(SRC_DIR_UTILS)/env_utils.c \
 
 # Objects
 OBJ = $(SRC:.c=.o)

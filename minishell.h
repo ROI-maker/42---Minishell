@@ -6,7 +6,7 @@
 /*   By: jdupont <jdupont@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/03 14:21:19 by jdupont           #+#    #+#             */
-/*   Updated: 2025/10/03 16:39:46 by jdupont          ###   ########.fr       */
+/*   Updated: 2025/10/03 20:35:53 by jdupont          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,13 @@
 # include <unistd.h>     /* access, open, read, close, fork, execve, dup, dup2, pipe, getcwd, chdir, unlink, isatty, ttyname, ttyslot */
 # include <sys/wait.h>   /* Pour wait, waitpid, wait3, wait4 */
 # include <signal.h>     /* Pour signal, sigaction, sigemptyset, sigaddset, kill */
-# include <sys/stat.h>   /* Pour stat, lstat, fstat */
+# include <sys/stat.h>  /* Pour stat, lstat, fstat */
+# include <sys/types.h>
+# include <sys/wait.h>
+# include <sys/ioctl.h>  /* Pour ioctl */
 # include <dirent.h>     /* Pour opendir, readdir, closedir */
 # include <string.h>     /* Pour strerror (bien que perror l'utilise indirectement) */
 # include <termios.h>    /* Pour tcsetattr, tcgetattr */
-# include <sys/ioctl.h>  /* Pour ioctl */
 # include <term.h>       /* Pour tgetent, tgetflag, tgetnum, tgetstr, tgoto, tputs (terminfo) */
 # include <readline/readline.h>  /* Pour readline, rl_clear_history, rl_on_new_line, rl_replace_line, rl_redisplay */
 # include <readline/history.h>   /* Pour add_history */
@@ -35,12 +37,29 @@
 # include "includes/minilib/ft_printf/ft_printf.h"
 # include "includes/minilib/libft.h"
 
-/* Les autres .h */
-# include "src/builtins/builtins.h"
-# include "src/init_prog/init_prog.h"
-# include "src/pipes/pipes.h"
-# include "src/utils/utils.h"
+/******************************************************************************
+*								MACROS										  *
+******************************************************************************/
 
-/* structs, prototypes, defines et extern g_signal ici... */
+
+/******************************************************************************
+*							GLOBAL VARIABLE									  *
+******************************************************************************/
+
+/******************************************************************************
+*								STRUCTS									      *
+******************************************************************************/
+
+
+/******************************************************************************
+*								ENUMS									      *
+******************************************************************************/
+
+
+/******************************************************************************
+*								PROTOTYPES									  *
+******************************************************************************/
+
+
 
 #endif

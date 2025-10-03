@@ -1,27 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   errors.c                                           :+:      :+:    :+:   */
+/*   init_shell.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jdupont <jdupont@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/03 14:01:22 by jdupont           #+#    #+#             */
-/*   Updated: 2025/10/03 21:02:45 by jdupont          ###   ########.fr       */
+/*   Created: 2025/10/03 20:59:53 by jdupont           #+#    #+#             */
+/*   Updated: 2025/10/03 21:01:17 by jdupont          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "minishell.h"
 
 /*
- * Fichier : errors.c
- * Description vulgarisée : Gère l'affichage des messages d'erreur.
+ * Fichier : init_shell.c
+ * Description vulgarisée : Prépare tout au lancement du shell, 
+ * comme allumer les lumières et vérifier les outils avant de commencer.
  * 
- * Description technique : Fonctions pour print erreurs avec perror ou custom msg, 
- * set exit status.
+ * Description technique : Alloue structs globales, 
+ * appelle init_env, setup signals, history, etc.
  * 
  * Fonctions potentielles :
- *   - error_msg() : Write "minishell: cmd: msg\n".
- *   - syntax_error() : Pour parsing errors.
+ *   - init_shell() : Main init, appelle autres inits.
  * 
- * Interactions : Utilisé partout : builtins/, parsing/, execution/.
+ * Interactions : Appel par main.c, utilise init_env.c, signals.c, history.c.
  */

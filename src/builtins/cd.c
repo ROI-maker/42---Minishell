@@ -6,15 +6,25 @@
 /*   By: jdupont <jdupont@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/03 13:54:10 by jdupont           #+#    #+#             */
-/*   Updated: 2025/10/03 15:39:44 by jdupont          ###   ########.fr       */
+/*   Updated: 2025/10/03 20:48:03 by jdupont          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//Rôle principal : Implémente cd (path relatif/absolu, ~).
-// Change dir avec chdir, update PWD/OLDPWD dans env.
+#include "minishell.h"
 
-//Fonctions attendues : int builtin_cd(char **args, t_env *env);
-
-//Conseils : Gère no arg (HOME), trop d'args (error). Perte si dir inexistant.
-
-#include "builtins.h"
+/*
+ * Fichier : cd.c (cd with only a relative or absolute path)
+ *
+ * Description vulgarisée : Gère la commande "cd" pour changer de dossier. 
+ * Supporte les chemins relatifs, absolus, et le tiret "-" pour revenir en arrière.
+ * 
+ * Description technique : Utilise chdir() pour changer le répertoire courant, 
+ * met à jour les variables d'env PWD et OLDPWD. 
+ * Gère les erreurs comme "no such file or directory".
+ * 
+ * Fonctions potentielles :
+ *   - builtin_cd() : Prend les args, résout le path, appelle chdir, update env.
+ * 
+ * Interactions : Travaille avec env_utils.c pour update PWD/OLDPWD, 
+ * errors.c pour afficher les erreurs.
+ */
