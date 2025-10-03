@@ -6,7 +6,7 @@
 /*   By: jdupont <jdupont@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/03 14:21:19 by jdupont           #+#    #+#             */
-/*   Updated: 2025/10/03 20:35:53 by jdupont          ###   ########.fr       */
+/*   Updated: 2025/10/03 21:21:33 by jdupont          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,6 @@
 # include <sys/wait.h>   /* Pour wait, waitpid, wait3, wait4 */
 # include <signal.h>     /* Pour signal, sigaction, sigemptyset, sigaddset, kill */
 # include <sys/stat.h>  /* Pour stat, lstat, fstat */
-# include <sys/types.h>
-# include <sys/wait.h>
 # include <sys/ioctl.h>  /* Pour ioctl */
 # include <dirent.h>     /* Pour opendir, readdir, closedir */
 # include <string.h>     /* Pour strerror (bien que perror l'utilise indirectement) */
@@ -29,6 +27,8 @@
 # include <readline/readline.h>  /* Pour readline, rl_clear_history, rl_on_new_line, rl_replace_line, rl_redisplay */
 # include <readline/history.h>   /* Pour add_history */
 # include <fcntl.h>      /* Pour O_RDONLY, O_WRONLY, etc., utilisé avec open */
+# include <sys/types.h>
+# include <sys/wait.h>
 # include <stdbool.h>
 # include <limits.h>
 # include <errno.h>
@@ -59,7 +59,5 @@
 /******************************************************************************
 *								PROTOTYPES									  *
 ******************************************************************************/
-
-
 
 #endif

@@ -3,20 +3,47 @@ NAME = minishell
 # Directories
 SRC_DIR = src
 SRC_DIR_BUILTINS = src/builtins
-SRC_DIR_PIPES = src/execution
-SRC_DIR_INIT = src/parsing
+SRC_DIR_EXEC = src/execution
+SRC_DIR_INIT = src/init
+SRC_DIR_PARSING = src/parsing
 SRC_DIR_UTILS = src/utils
 LIBFT_DIR = includes/minilib
 
 # Source files (empty for now, add as you go)
 SRC =	$(SRC_DIR)/main.c \
+		$(SRC_DIR_BUILTINS)/cd.c \
+		$(SRC_DIR_BUILTINS)/echo.c \
+		$(SRC_DIR_BUILTINS)/env.c \
+		$(SRC_DIR_BUILTINS)/exit.c \
+		$(SRC_DIR_BUILTINS)/export.c \
+		$(SRC_DIR_BUILTINS)/pwd.c \
+		$(SRC_DIR_BUILTINS)/unset.c \
+		$(SRC_DIR_BUILTINS)/builtins_utils.c \
+		$(SRC_DIR_EXEC)/exec.c \
+		$(SRC_DIR_EXEC)/exec_utils.c \
+		$(SRC_DIR_EXEC)/pipes.c \
+		$(SRC_DIR_EXEC)/redirections.c \
+		$(SRC_DIR_INIT)/init_env.c \
+		$(SRC_DIR_INIT)/init_shell.c \
+		$(SRC_DIR_INIT)/init_utils.c \
+		$(SRC_DIR_PARSING)/expansions.c \
+		$(SRC_DIR_PARSING)/lexer.c \
+		$(SRC_DIR_PARSING)/parser.c \
+		$(SRC_DIR_PARSING)/parsing_utils.c \
+		$(SRC_DIR_UTILS)/env_utils.c \
+		$(SRC_DIR_UTILS)/errors.c \
+		$(SRC_DIR_UTILS)/exit_prog.c \
+		$(SRC_DIR_UTILS)/free.c \
+		$(SRC_DIR_UTILS)/history.c \
+		$(SRC_DIR_UTILS)/signals.c \
+		$(SRC_DIR_UTILS)/utils.c \
 
 # Objects
 OBJ = $(SRC:.c=.o)
 
 # Compiler and flags
 CC = gcc
-CFLAGS = -Wall -Wextra -Werror -I$(LIBFT_DIR) -I$(LIBFT_DIR)/ft_printf
+CFLAGS = -Wall -Wextra -Werror -I$(LIBFT_DIR) -I$(LIBFT_DIR)/ft_printf -I.
 LDFLAGS = -L$(LIBFT_DIR) -lft -lm -lreadline
 
 # Colors

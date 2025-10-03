@@ -1,17 +1,13 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   utils.c                                            :+:      :+:    :+:   */
+/*   init_utils.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jdupont <jdupont@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/03 14:00:33 by jdupont           #+#    #+#             */
-/*   Updated: 2025/10/03 21:21:42 by jdupont          ###   ########.fr       */
+/*   Created: 2025/10/03 21:12:01 by jdupont           #+#    #+#             */
+/*   Updated: 2025/10/03 21:12:09 by jdupont          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-//Rôle principal : Fonctions utilitaires générales
-
-//Conseils : Évite de dupliquer libft. Utile pour checks comme valid path.
 
 #include "minishell.h"
