@@ -2,7 +2,7 @@
 
 ## 0. Préparation du repo et setup initial
 
-* [ ] Créer repo Git et structure de dossiers (A & B)
+* [X] Créer repo Git et structure de dossiers (A & B)
 * [ ] Créer Makefile minimal compilant tous les fichiers (A)
 * [ ] Ajouter libreadline dans Makefile (A)
 * [ ] Créer `minishell.h` avec includes et structures de base (B)
