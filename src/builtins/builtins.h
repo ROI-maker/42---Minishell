@@ -6,7 +6,7 @@
 /*   By: jdupont <jdupont@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/03 14:18:57 by jdupont           #+#    #+#             */
-/*   Updated: 2025/10/03 14:51:12 by jdupont          ###   ########.fr       */
+/*   Updated: 2025/10/03 15:48:53 by jdupont          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,5 @@
 # define BUILTINS_H
 
 #include "../../minishell.h"
-
-void	test_makefile(void);
-
 
 #endif

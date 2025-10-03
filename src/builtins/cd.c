@@ -6,7 +6,7 @@
 /*   By: jdupont <jdupont@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/03 13:54:10 by jdupont           #+#    #+#             */
-/*   Updated: 2025/10/03 14:51:03 by jdupont          ###   ########.fr       */
+/*   Updated: 2025/10/03 15:39:44 by jdupont          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,3 @@
 //Conseils : Gère no arg (HOME), trop d'args (error). Perte si dir inexistant.
 
 #include "builtins.h"
-
-void	test_makefile(void)
-{
-	ft_printf("bonjour je suis un test de makefile\n");
-}

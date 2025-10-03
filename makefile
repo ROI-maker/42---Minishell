@@ -37,7 +37,7 @@ OBJ = $(SRC:.c=.o)
 # Compiler and flags
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror -I$(LIBFT_DIR) -I$(LIBFT_DIR)/ft_printf
-LDFLAGS = -L$(LIBFT_DIR) -lft -lm
+LDFLAGS = -L$(LIBFT_DIR) -lft -lm -lreadline
 
 # Colors
 GREEN = \033[0;32ms
